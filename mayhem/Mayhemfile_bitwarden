@@ -1,0 +1,13 @@
+project: savantenvs/keepassxc
+target: bitwarden
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bitwarden/testsuite
+
+cmds:
+  - cmd: /mayhem/build-fuzz/mayhem-bin/fuzz_bitwarden
+    libfuzzer: true
+    timeout: 30
+    env:
+      QT_QPA_PLATFORM: offscreen

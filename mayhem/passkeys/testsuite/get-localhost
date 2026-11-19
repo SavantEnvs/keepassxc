@@ -1,0 +1,1 @@
+{"publicKey":{"allowCredentials":[{"id":"yrzFJ5lwcpTwYMOdXSmxF5b5cYQlqBMzbbU_d-oFLO8","transports":["internal"],"type":"public-key"}],"challenge":"9z36vTfQTL95Lf7WnZgyte7ohGeF-XRiLxkL-LuGU1zopRmMIUA1LVwzGpyIm1fOBn1QnRa0QH27ADAaJGHysQ","rpId":"localhost","timeout":60000,"userVerification":"required","extensions":{"uvm":true}},"origin":"http://localhost:8080"}

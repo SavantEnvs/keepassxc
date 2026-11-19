@@ -1,0 +1,13 @@
+project: savantenvs/keepassxc
+target: opux
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/opux/testsuite
+
+cmds:
+  - cmd: /mayhem/build-fuzz/mayhem-bin/fuzz_opux
+    libfuzzer: true
+    timeout: 30
+    env:
+      QT_QPA_PLATFORM: offscreen

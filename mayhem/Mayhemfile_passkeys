@@ -1,0 +1,13 @@
+project: savantenvs/keepassxc
+target: passkeys
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/passkeys/testsuite
+
+cmds:
+  - cmd: /mayhem/build-fuzz/mayhem-bin/fuzz_passkeys
+    libfuzzer: true
+    timeout: 30
+    env:
+      QT_QPA_PLATFORM: offscreen

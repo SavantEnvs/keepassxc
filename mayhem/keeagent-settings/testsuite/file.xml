@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<EntrySettings><AllowUseOfSshKey>true</AllowUseOfSshKey><AddAtDatabaseOpen>false</AddAtDatabaseOpen><Location><SelectedType>file</SelectedType><FileName>$HOME/.ssh/id_ed25519</FileName></Location></EntrySettings>

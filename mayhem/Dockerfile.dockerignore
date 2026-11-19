@@ -1,0 +1,3 @@
+# Build context for mayhem/Dockerfile: local build trees are rebuilt in the image.
+build-fuzz/
+build-tests/

@@ -1,0 +1,1 @@
+otpauth://totp/x?secret=MZXW6YTBOI%3D%3D%3D%3D%3D%3D&period=0&digits=10

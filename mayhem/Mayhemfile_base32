@@ -1,0 +1,13 @@
+project: savantenvs/keepassxc
+target: base32
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/base32/testsuite
+
+cmds:
+  - cmd: /mayhem/build-fuzz/mayhem-bin/fuzz_base32
+    libfuzzer: true
+    timeout: 30
+    env:
+      QT_QPA_PLATFORM: offscreen
